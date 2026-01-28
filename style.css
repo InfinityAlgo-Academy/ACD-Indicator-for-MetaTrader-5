@@ -150,8 +150,11 @@ ol {
     flex-direction: column;
     gap: 1.5rem;
     transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 1001;
+    z-index: 9999;
+    /* Increased z-index */
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    /* Enable scrolling within menu if needed */
 }
 
 .mobile-nav.active {
@@ -201,7 +204,8 @@ ol {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(4px);
-    z-index: 1000;
+    z-index: 9998;
+    /* Increased z-index just below nav */
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
