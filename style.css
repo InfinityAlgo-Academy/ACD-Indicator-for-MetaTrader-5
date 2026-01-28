@@ -53,6 +53,12 @@ header {
 
 
 
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .nav-container {
     background: rgba(11, 14, 20, 0.85);
     backdrop-filter: blur(10px);
