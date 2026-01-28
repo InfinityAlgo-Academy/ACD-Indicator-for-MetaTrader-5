@@ -785,10 +785,21 @@ footer {
 @media (max-width: 480px) {
     .header-inner {
         padding: 0 1rem;
+        position: relative;
+        justify-content: center;
+        /* Center the logo */
     }
 
     .logo {
         font-size: 1.4rem;
+        order: 0;
+        /* Keep logo in the middle */
+    }
+
+    .header-actions {
+        position: absolute;
+        right: 1rem;
+        /* Position menu toggle on the right */
     }
 
     .hero {
